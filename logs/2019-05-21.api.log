@@ -1,0 +1,688 @@
+2019-05-21 09:13:04:121 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:13:04:127 | info | [client/index.js]: Node ID: client
+2019-05-21 09:13:04:128 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 09:13:04:129 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 09:13:04:131 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 09:13:04:134 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 09:13:04:135 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 09:13:04:153 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 09:13:04:304 | info | [client/index.js]: NATS client is connected.
+2019-05-21 09:13:04:833 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 09:13:04:840 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 09:13:04:854 | warn | [client/index.js]: Service 'otp.generate' is not registered.
+2019-05-21 09:13:04:856 | warn | [client/index.js]: Service 'math.add' is not registered.
+2019-05-21 09:13:04:857 | warn | [client/index.js]: Service 'math.add' is not registered.
+2019-05-21 09:13:04:858 | warn | [client/index.js]: Service 'math.add' is not registered.
+2019-05-21 09:13:04:867 | warn | [client/index.js]: Service 'otp.generate' is not registered.
+2019-05-21 09:13:13:589 | info | [server/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:13:13:594 | info | [server/index.js]: Node ID: server
+2019-05-21 09:13:13:595 | info | [server/index.js]: Namespace: demo-micro-service
+2019-05-21 09:13:13:596 | info | [server/index.js]: Strategy: CpuUsageStrategy
+2019-05-21 09:13:13:685 | warn | [server/index.js]: The 'redlock' package is missing. If you want to enable cache lock, please install it with 'npm install redlock --save' command.
+2019-05-21 09:13:13:686 | info | [server/index.js]: Cacher: RedisCacher
+2019-05-21 09:13:13:686 | info | [server/index.js]: Serializer: JSONSerializer
+2019-05-21 09:13:13:689 | info | [server/index.js]: Transporter: NatsTransporter
+2019-05-21 09:13:13:690 | info | [server/index.js]: Registered 11 internal middleware(s).
+2019-05-21 09:13:13:715 | info | [server/index.js]: Connecting to the transporter...
+2019-05-21 09:13:13:758 | info | [server/index.js]: Redis cacher connected.
+2019-05-21 09:13:13:797 | info | [server/index.js]: NATS client is connected.
+2019-05-21 09:13:13:813 | info | [server/index.js]: Node 'client' connected.
+2019-05-21 09:13:14:331 | info | [server/index.js]: '$node' service is registered.
+2019-05-21 09:13:14:333 | info | [server/index.js]: 'math' service is registered.
+2019-05-21 09:13:14:335 | info | [server/index.js]: 'users' service is registered.
+2019-05-21 09:13:14:339 | info | [server/index.js]: 'otp' service is registered.
+2019-05-21 09:13:14:346 | info | [server/index.js]: ServiceBroker with 4 service(s) is started successfully.
+2019-05-21 09:13:14:361 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 09:13:17:011 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 09:13:17:018 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:13:22:849 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:13:22:854 | info | [client/index.js]: Node ID: client
+2019-05-21 09:13:22:855 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 09:13:22:856 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 09:13:22:858 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 09:13:22:860 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 09:13:22:861 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 09:13:22:871 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 09:13:22:922 | info | [client/index.js]: NATS client is connected.
+2019-05-21 09:13:22:936 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 09:13:23:446 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 09:13:23:447 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 09:13:23:452 | info | [server/index.js]: Node 'client' reconnected.
+2019-05-21 09:13:23:467 | info | [server/index.js]: OTP Service
+2019-05-21 09:13:23:475 | info | [server/index.js]: OTP Service
+2019-05-21 09:13:23:477 | info | [server/index.js]:  method called
+2019-05-21 09:13:23:477 | info | [server/index.js]:  method called
+2019-05-21 09:13:23:478 | info | [server/index.js]:  method called
+2019-05-21 09:13:23:962 | warn | [client/index.js]: Request 'otp.generate' is timed out. 
+|---> {"requestID":"abf27420-c382-42d5-bcdc-e2322081cb31","nodeID":"server","timeout":500}
+2019-05-21 09:13:23:964 | warn | [client/index.js]: The 'otp.generate' request is failed. Return fallback response. 
+|---> {"requestID":"abf27420-c382-42d5-bcdc-e2322081cb31","err":"Request is timed out when call 'otp.generate' action on 'server' node."}
+2019-05-21 09:13:23:967 | error | [client/index.js]: Error occurred! Action: 'otp.generate', Message: undefined - Cannot read property 'get' of null
+2019-05-21 09:13:23:978 | warn | [server/index.js]: Request 'otp.generate' is timed out. 
+|---> {"requestID":"abf27420-c382-42d5-bcdc-e2322081cb31","nodeID":"client","timeout":500}
+2019-05-21 09:13:23:980 | warn | [server/index.js]: The 'otp.generate' request is failed. Return fallback response. 
+|---> {"requestID":"abf27420-c382-42d5-bcdc-e2322081cb31","err":"Request is timed out when call 'otp.generate' action on 'client' node."}
+2019-05-21 09:15:36:240 | warn | [client/index.js]: Node 'server' disconnected.
+2019-05-21 09:15:36:258 | info | [server/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:15:42:110 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:19:08:117 | info | [server/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:19:08:123 | info | [server/index.js]: Node ID: server
+2019-05-21 09:19:08:124 | info | [server/index.js]: Namespace: demo-micro-service
+2019-05-21 09:19:08:125 | info | [server/index.js]: Strategy: CpuUsageStrategy
+2019-05-21 09:19:08:305 | warn | [server/index.js]: The 'redlock' package is missing. If you want to enable cache lock, please install it with 'npm install redlock --save' command.
+2019-05-21 09:19:08:306 | info | [server/index.js]: Cacher: RedisCacher
+2019-05-21 09:19:08:307 | info | [server/index.js]: Serializer: JSONSerializer
+2019-05-21 09:19:08:310 | info | [server/index.js]: Transporter: NatsTransporter
+2019-05-21 09:19:08:312 | info | [server/index.js]: Registered 11 internal middleware(s).
+2019-05-21 09:19:08:348 | info | [server/index.js]: Connecting to the transporter...
+2019-05-21 09:19:08:377 | info | [server/index.js]: Redis cacher connected.
+2019-05-21 09:19:08:399 | info | [server/index.js]: NATS client is connected.
+2019-05-21 09:19:08:922 | info | [server/index.js]: '$node' service is registered.
+2019-05-21 09:19:08:923 | info | [server/index.js]: 'math' service is registered.
+2019-05-21 09:19:08:924 | info | [server/index.js]: 'users' service is registered.
+2019-05-21 09:19:08:926 | info | [server/index.js]: 'otp' service is registered.
+2019-05-21 09:19:08:926 | info | [server/index.js]: ServiceBroker with 4 service(s) is started successfully.
+2019-05-21 09:19:13:544 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:19:13:556 | info | [client/index.js]: Node ID: client
+2019-05-21 09:19:13:557 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 09:19:13:560 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 09:19:13:564 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 09:19:13:566 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 09:19:13:575 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 09:19:13:599 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 09:19:13:661 | info | [client/index.js]: NATS client is connected.
+2019-05-21 09:19:13:687 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 09:19:14:187 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 09:19:14:188 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 09:19:14:196 | info | [server/index.js]: Node 'client' connected.
+2019-05-21 09:19:14:222 | info | [server/index.js]: OTP Service
+2019-05-21 09:19:14:234 | info | [server/index.js]: OTP Service
+2019-05-21 09:19:14:236 | info | [server/index.js]:  method called
+2019-05-21 09:19:14:236 | info | [server/index.js]:  method called
+2019-05-21 09:19:14:706 | warn | [client/index.js]: Request 'otp.generate' is timed out. 
+|---> {"requestID":"cd5b35df-b32b-4df3-9de8-49a4f56b6da5","nodeID":"server","timeout":500}
+2019-05-21 09:19:14:708 | warn | [client/index.js]: The 'otp.generate' request is failed. Return fallback response. 
+|---> {"requestID":"cd5b35df-b32b-4df3-9de8-49a4f56b6da5","err":"Request is timed out when call 'otp.generate' action on 'server' node."}
+2019-05-21 09:19:14:712 | error | [client/index.js]: Error occurred! Action: 'otp.generate', Message: undefined - Cannot read property 'get' of null
+2019-05-21 09:19:14:737 | warn | [server/index.js]: Request 'otp.generate' is timed out. 
+|---> {"requestID":"cd5b35df-b32b-4df3-9de8-49a4f56b6da5","nodeID":"client","timeout":500}
+2019-05-21 09:19:14:743 | warn | [server/index.js]: The 'otp.generate' request is failed. Return fallback response. 
+|---> {"requestID":"cd5b35df-b32b-4df3-9de8-49a4f56b6da5","err":"Request is timed out when call 'otp.generate' action on 'client' node."}
+2019-05-21 09:19:30:156 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:19:30:156 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 09:20:50:227 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:20:50:236 | info | [client/index.js]: Node ID: client
+2019-05-21 09:20:50:237 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 09:20:50:240 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 09:20:50:243 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 09:20:50:244 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 09:20:50:246 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 09:20:50:278 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 09:20:50:349 | info | [client/index.js]: NATS client is connected.
+2019-05-21 09:20:50:385 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 09:20:50:907 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 09:20:50:911 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 09:20:50:916 | info | [server/index.js]: Node 'client' reconnected.
+2019-05-21 09:20:50:948 | info | [server/index.js]: OTP Service
+2019-05-21 09:20:51:044 | info | [server/index.js]: OTP Service
+2019-05-21 09:20:51:046 | info | [server/index.js]:  method called
+2019-05-21 09:20:51:048 | info | [server/index.js]:  method called
+2019-05-21 09:20:51:480 | warn | [client/index.js]: Request 'otp.generate' is timed out. 
+|---> {"requestID":"115168b5-ec6f-47f4-b9f8-89be8f3409fd","nodeID":"server","timeout":500}
+2019-05-21 09:20:51:482 | warn | [client/index.js]: The 'otp.generate' request is failed. Return fallback response. 
+|---> {"requestID":"115168b5-ec6f-47f4-b9f8-89be8f3409fd","err":"Request is timed out when call 'otp.generate' action on 'server' node."}
+2019-05-21 09:20:51:485 | error | [client/index.js]: Error occurred! Action: 'otp.generate', Message: undefined - Cannot read property 'get' of null
+2019-05-21 09:20:51:546 | warn | [server/index.js]: Request 'otp.generate' is timed out. 
+|---> {"requestID":"115168b5-ec6f-47f4-b9f8-89be8f3409fd","nodeID":"client","timeout":500}
+2019-05-21 09:20:51:547 | warn | [server/index.js]: The 'otp.generate' request is failed. Return fallback response. 
+|---> {"requestID":"115168b5-ec6f-47f4-b9f8-89be8f3409fd","err":"Request is timed out when call 'otp.generate' action on 'client' node."}
+2019-05-21 09:21:20:274 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:21:20:315 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 09:21:22:581 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:21:22:587 | info | [client/index.js]: Node ID: client
+2019-05-21 09:21:22:589 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 09:21:22:590 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 09:21:22:594 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 09:21:22:596 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 09:21:22:598 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 09:21:22:621 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 09:21:22:739 | info | [client/index.js]: NATS client is connected.
+2019-05-21 09:21:22:762 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 09:21:23:263 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 09:21:23:264 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 09:21:23:268 | info | [server/index.js]: Node 'client' reconnected.
+2019-05-21 09:21:23:277 | info | [server/index.js]: OTP Service
+2019-05-21 09:21:23:302 | info | [server/index.js]: OTP Service
+2019-05-21 09:21:23:303 | info | [server/index.js]:  method called
+2019-05-21 09:21:23:304 | info | [server/index.js]:  method called
+2019-05-21 09:21:28:285 | warn | [client/index.js]: Request 'otp.generate' is timed out. 
+|---> {"requestID":"0916e78a-bfe7-485c-acae-9e779d0cacc7","nodeID":"server","timeout":5001}
+2019-05-21 09:21:28:288 | warn | [client/index.js]: The 'otp.generate' request is failed. Return fallback response. 
+|---> {"requestID":"0916e78a-bfe7-485c-acae-9e779d0cacc7","err":"Request is timed out when call 'otp.generate' action on 'server' node."}
+2019-05-21 09:21:28:290 | error | [client/index.js]: Error occurred! Action: 'otp.generate', Message: undefined - Cannot read property 'get' of null
+2019-05-21 09:21:28:309 | warn | [server/index.js]: Request 'otp.generate' is timed out. 
+|---> {"requestID":"0916e78a-bfe7-485c-acae-9e779d0cacc7","nodeID":"client","timeout":5001}
+2019-05-21 09:21:28:310 | warn | [server/index.js]: The 'otp.generate' request is failed. Return fallback response. 
+|---> {"requestID":"0916e78a-bfe7-485c-acae-9e779d0cacc7","err":"Request is timed out when call 'otp.generate' action on 'client' node."}
+2019-05-21 09:21:36:771 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 09:21:36:772 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:22:57:106 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:22:57:112 | info | [client/index.js]: Node ID: client
+2019-05-21 09:22:57:113 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 09:22:57:114 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 09:22:57:116 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 09:22:57:117 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 09:22:57:118 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 09:22:57:134 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 09:22:57:214 | info | [client/index.js]: NATS client is connected.
+2019-05-21 09:22:57:232 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 09:22:57:739 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 09:22:57:740 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 09:22:57:744 | info | [server/index.js]: Node 'client' reconnected.
+2019-05-21 09:22:57:758 | info | [server/index.js]: OTP Service
+2019-05-21 09:22:57:805 | info | [server/index.js]: OTP Service
+2019-05-21 09:22:57:808 | info | [server/index.js]:  method called
+2019-05-21 09:22:57:822 | info | [server/index.js]:  method called
+2019-05-21 09:23:02:753 | warn | [client/index.js]: Request 'otp.generate' is timed out. 
+|---> {"requestID":"511a1d9e-2d4d-49b4-aa5f-a2cfadf4bfe1","nodeID":"server","timeout":5001}
+2019-05-21 09:23:02:756 | error | [client/index.js]: Error occurred! Action: 'otp.generate', Message: 504 - Request is timed out when call 'otp.generate' action on 'server' node.
+2019-05-21 09:23:02:757 | error | [client/index.js]: Error data: 
+|---> {"action":"otp.generate","nodeID":"server"}
+2019-05-21 09:23:02:811 | warn | [server/index.js]: Request 'otp.generate' is timed out. 
+|---> {"requestID":"511a1d9e-2d4d-49b4-aa5f-a2cfadf4bfe1","nodeID":"client","timeout":5001}
+2019-05-21 09:23:02:811 | warn | [server/index.js]: The 'otp.generate' request is failed. Return fallback response. 
+|---> {"requestID":"511a1d9e-2d4d-49b4-aa5f-a2cfadf4bfe1","err":"Request is timed out when call 'otp.generate' action on 'client' node."}
+2019-05-21 09:23:11:102 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 09:23:11:100 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:23:29:186 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:23:29:198 | info | [client/index.js]: Node ID: client
+2019-05-21 09:23:29:199 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 09:23:29:200 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 09:23:29:204 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 09:23:29:208 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 09:23:29:210 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 09:23:29:223 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 09:23:29:297 | info | [client/index.js]: NATS client is connected.
+2019-05-21 09:23:29:314 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 09:23:29:814 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 09:23:29:815 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 09:23:29:820 | info | [server/index.js]: Node 'client' reconnected.
+2019-05-21 09:23:29:827 | info | [server/index.js]: OTP Service
+2019-05-21 09:23:29:842 | info | [server/index.js]: OTP Service
+2019-05-21 09:23:29:842 | info | [server/index.js]:  method called
+2019-05-21 09:23:29:843 | info | [server/index.js]:  method called
+2019-05-21 09:23:34:862 | info | [server/index.js]: OTP Service
+2019-05-21 09:23:39:884 | info | [server/index.js]: OTP Service
+2019-05-21 09:23:43:584 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 09:23:43:585 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:25:29:440 | info | [server/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:25:31:729 | info | [server/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:25:31:735 | info | [server/index.js]: Node ID: server
+2019-05-21 09:25:31:735 | info | [server/index.js]: Namespace: demo-micro-service
+2019-05-21 09:25:31:736 | info | [server/index.js]: Strategy: CpuUsageStrategy
+2019-05-21 09:25:31:820 | warn | [server/index.js]: The 'redlock' package is missing. If you want to enable cache lock, please install it with 'npm install redlock --save' command.
+2019-05-21 09:25:31:821 | info | [server/index.js]: Cacher: RedisCacher
+2019-05-21 09:25:31:822 | info | [server/index.js]: Serializer: JSONSerializer
+2019-05-21 09:25:31:823 | info | [server/index.js]: Transporter: NatsTransporter
+2019-05-21 09:25:31:825 | info | [server/index.js]: Registered 11 internal middleware(s).
+2019-05-21 09:25:31:862 | info | [server/index.js]: Connecting to the transporter...
+2019-05-21 09:25:31:893 | info | [server/index.js]: Redis cacher connected.
+2019-05-21 09:25:31:930 | info | [server/index.js]: NATS client is connected.
+2019-05-21 09:25:32:448 | info | [server/index.js]: '$node' service is registered.
+2019-05-21 09:25:32:449 | info | [server/index.js]: 'math' service is registered.
+2019-05-21 09:25:32:450 | info | [server/index.js]: 'users' service is registered.
+2019-05-21 09:25:32:451 | info | [server/index.js]: 'otp' service is registered.
+2019-05-21 09:25:32:452 | info | [server/index.js]: ServiceBroker with 4 service(s) is started successfully.
+2019-05-21 09:25:35:383 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:25:35:389 | info | [client/index.js]: Node ID: client
+2019-05-21 09:25:35:390 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 09:25:35:392 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 09:25:35:395 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 09:25:35:396 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 09:25:35:397 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 09:25:35:407 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 09:25:35:462 | info | [client/index.js]: NATS client is connected.
+2019-05-21 09:25:35:474 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 09:25:35:973 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 09:25:35:974 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 09:25:35:980 | info | [server/index.js]: Node 'client' connected.
+2019-05-21 09:25:35:986 | info | [server/index.js]: OTP Service
+2019-05-21 09:25:35:992 | info | [server/index.js]:  method called
+2019-05-21 09:25:35:993 | info | [server/index.js]:  method called
+2019-05-21 09:25:35:993 | info | [server/index.js]:  method called
+2019-05-21 09:25:38:006 | info | [server/index.js]: OTP Service
+2019-05-21 09:25:43:025 | info | [server/index.js]: OTP Service
+2019-05-21 09:25:48:034 | info | [server/index.js]: OTP Service
+2019-05-21 09:25:53:041 | info | [server/index.js]: OTP Service
+2019-05-21 09:25:57:232 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:25:57:232 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 09:26:01:143 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:26:01:149 | info | [client/index.js]: Node ID: client
+2019-05-21 09:26:01:150 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 09:26:01:152 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 09:26:01:155 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 09:26:01:157 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 09:26:01:160 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 09:26:01:177 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 09:26:01:235 | info | [client/index.js]: NATS client is connected.
+2019-05-21 09:26:01:254 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 09:26:01:753 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 09:26:01:754 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 09:26:01:760 | info | [server/index.js]: Node 'client' reconnected.
+2019-05-21 09:26:01:763 | info | [server/index.js]: OTP Service
+2019-05-21 09:26:01:778 | info | [server/index.js]: OTP Service
+2019-05-21 09:26:06:786 | info | [server/index.js]: OTP Service
+2019-05-21 09:26:11:799 | info | [server/index.js]:  method called
+2019-05-21 09:26:13:804 | info | [server/index.js]: OTP Service
+2019-05-21 09:26:18:812 | info | [server/index.js]: OTP Service
+2019-05-21 09:26:21:068 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 09:26:21:068 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:31:27:012 | info | [server/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:55:27:930 | info | [server/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:55:27:937 | info | [server/index.js]: Node ID: server
+2019-05-21 09:55:27:938 | info | [server/index.js]: Namespace: demo-micro-service
+2019-05-21 09:55:27:940 | info | [server/index.js]: Strategy: CpuUsageStrategy
+2019-05-21 09:55:28:017 | warn | [server/index.js]: The 'redlock' package is missing. If you want to enable cache lock, please install it with 'npm install redlock --save' command.
+2019-05-21 09:55:28:017 | info | [server/index.js]: Cacher: RedisCacher
+2019-05-21 09:55:28:018 | info | [server/index.js]: Serializer: JSONSerializer
+2019-05-21 09:55:28:019 | info | [server/index.js]: Transporter: NatsTransporter
+2019-05-21 09:55:28:021 | info | [server/index.js]: Registered 11 internal middleware(s).
+2019-05-21 09:55:28:057 | info | [server/index.js]: Connecting to the transporter...
+2019-05-21 09:55:28:092 | info | [server/index.js]: Redis cacher connected.
+2019-05-21 09:55:28:126 | info | [server/index.js]: NATS client is connected.
+2019-05-21 09:55:28:650 | info | [server/index.js]: '$node' service is registered.
+2019-05-21 09:55:28:659 | info | [server/index.js]: 'math' service is registered.
+2019-05-21 09:55:28:663 | info | [server/index.js]: 'users' service is registered.
+2019-05-21 09:55:28:675 | info | [server/index.js]: 'otp' service is registered.
+2019-05-21 09:55:28:678 | info | [server/index.js]: ServiceBroker with 4 service(s) is started successfully.
+2019-05-21 09:56:40:946 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:56:40:959 | info | [client/index.js]: Node ID: client
+2019-05-21 09:56:40:959 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 09:56:40:961 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 09:56:40:963 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 09:56:40:965 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 09:56:40:966 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 09:56:40:976 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 09:56:41:037 | info | [client/index.js]: NATS client is connected.
+2019-05-21 09:56:41:069 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 09:56:41:578 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 09:56:41:579 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 09:56:41:584 | info | [server/index.js]: Node 'client' connected.
+2019-05-21 09:56:41:595 | info | [server/index.js]: OTP Service
+2019-05-21 09:56:41:600 | info | [server/index.js]:  method called
+2019-05-21 09:56:41:601 | info | [server/index.js]:  method called
+2019-05-21 09:56:41:602 | info | [server/index.js]:  method called
+2019-05-21 09:56:43:623 | info | [server/index.js]: OTP Service
+2019-05-21 09:56:48:634 | info | [server/index.js]: OTP Service
+2019-05-21 09:56:53:645 | info | [server/index.js]: OTP Service
+2019-05-21 09:56:58:654 | info | [server/index.js]: OTP Service
+2019-05-21 09:57:03:661 | info | [server/index.js]: OTP Service
+2019-05-21 09:57:08:668 | info | [server/index.js]: OTP Service
+2019-05-21 09:57:13:673 | info | [server/index.js]:  method called
+2019-05-21 09:57:15:675 | info | [server/index.js]: OTP Service
+2019-05-21 09:57:20:680 | info | [server/index.js]: OTP Service
+2019-05-21 09:57:25:693 | info | [server/index.js]: OTP Service
+2019-05-21 09:57:30:701 | info | [server/index.js]: OTP Service
+2019-05-21 09:57:35:719 | info | [server/index.js]: OTP Service
+2019-05-21 09:57:40:725 | info | [server/index.js]: OTP Service
+2019-05-21 09:57:45:732 | info | [server/index.js]:  method called
+2019-05-21 09:57:47:735 | info | [server/index.js]: OTP Service
+2019-05-21 09:57:52:747 | info | [server/index.js]: OTP Service
+2019-05-21 09:57:57:225 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 09:57:57:227 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 09:59:37:802 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 09:59:37:809 | info | [client/index.js]: Node ID: client
+2019-05-21 09:59:37:810 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 09:59:37:811 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 09:59:37:813 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 09:59:37:815 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 09:59:37:817 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 09:59:37:828 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 09:59:37:875 | info | [client/index.js]: NATS client is connected.
+2019-05-21 09:59:37:899 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 09:59:38:397 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 09:59:38:398 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 09:59:38:402 | info | [server/index.js]: Node 'client' reconnected.
+2019-05-21 09:59:38:406 | info | [server/index.js]: OTP Service
+2019-05-21 09:59:38:410 | info | [server/index.js]: OTP Service
+2019-05-21 09:59:38:411 | info | [server/index.js]:  method called
+2019-05-21 09:59:38:412 | info | [server/index.js]:  method called
+2019-05-21 09:59:43:422 | info | [server/index.js]:  method called
+2019-05-21 09:59:45:425 | info | [server/index.js]: OTP Service
+2019-05-21 09:59:50:435 | info | [server/index.js]: OTP Service
+2019-05-21 09:59:55:443 | info | [server/index.js]: OTP Service
+2019-05-21 10:00:00:452 | info | [server/index.js]: OTP Service
+2019-05-21 10:00:05:460 | info | [server/index.js]: OTP Service
+2019-05-21 10:00:10:470 | info | [server/index.js]: OTP Service
+2019-05-21 10:00:11:762 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:00:11:762 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 10:01:31:129 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 10:01:31:136 | info | [client/index.js]: Node ID: client
+2019-05-21 10:01:31:137 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 10:01:31:138 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 10:01:31:141 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 10:01:31:142 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 10:01:31:144 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 10:01:31:164 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 10:01:31:237 | info | [client/index.js]: NATS client is connected.
+2019-05-21 10:01:31:260 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 10:01:31:764 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 10:01:31:765 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 10:01:31:769 | info | [server/index.js]: Node 'client' reconnected.
+2019-05-21 10:01:31:776 | info | [server/index.js]: OTP Service
+2019-05-21 10:01:31:780 | info | [server/index.js]:  method called
+2019-05-21 10:01:31:780 | info | [server/index.js]:  method called
+2019-05-21 10:01:31:781 | info | [server/index.js]:  method called
+2019-05-21 10:01:33:786 | info | [server/index.js]: OTP Service
+2019-05-21 10:01:38:792 | info | [server/index.js]: OTP Service
+2019-05-21 10:01:43:803 | info | [server/index.js]: OTP Service
+2019-05-21 10:01:48:826 | info | [server/index.js]: OTP Service
+2019-05-21 10:01:53:090 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 10:01:53:092 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:03:33:956 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 10:03:33:961 | info | [client/index.js]: Node ID: client
+2019-05-21 10:03:33:962 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 10:03:33:963 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 10:03:33:965 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 10:03:33:966 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 10:03:33:967 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 10:03:33:978 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 10:03:34:027 | info | [client/index.js]: NATS client is connected.
+2019-05-21 10:03:34:053 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 10:03:34:543 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 10:03:34:545 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 10:03:34:549 | info | [server/index.js]: Node 'client' reconnected.
+2019-05-21 10:03:34:552 | info | [server/index.js]: OTP Service
+2019-05-21 10:03:34:556 | info | [server/index.js]:  method called
+2019-05-21 10:03:34:557 | info | [server/index.js]:  method called
+2019-05-21 10:03:34:557 | info | [server/index.js]:  method called
+2019-05-21 10:03:36:563 | info | [server/index.js]: OTP Service
+2019-05-21 10:03:41:572 | info | [server/index.js]: OTP Service
+2019-05-21 10:03:46:579 | info | [server/index.js]: OTP Service
+2019-05-21 10:03:51:588 | info | [server/index.js]: OTP Service
+2019-05-21 10:03:56:596 | info | [server/index.js]: OTP Service
+2019-05-21 10:04:01:602 | info | [server/index.js]: OTP Service
+2019-05-21 10:04:06:606 | info | [server/index.js]:  method called
+2019-05-21 10:04:08:619 | info | [server/index.js]: OTP Service
+2019-05-21 10:04:11:886 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 10:04:11:887 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:10:35:701 | info | [server/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:10:38:958 | info | [server/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 10:10:38:963 | info | [server/index.js]: Node ID: server
+2019-05-21 10:10:38:964 | info | [server/index.js]: Namespace: demo-micro-service
+2019-05-21 10:10:38:965 | info | [server/index.js]: Strategy: CpuUsageStrategy
+2019-05-21 10:10:39:036 | warn | [server/index.js]: The 'redlock' package is missing. If you want to enable cache lock, please install it with 'npm install redlock --save' command.
+2019-05-21 10:10:39:037 | info | [server/index.js]: Cacher: RedisCacher
+2019-05-21 10:10:39:040 | info | [server/index.js]: Serializer: JSONSerializer
+2019-05-21 10:10:39:042 | info | [server/index.js]: Transporter: NatsTransporter
+2019-05-21 10:10:39:043 | info | [server/index.js]: Registered 11 internal middleware(s).
+2019-05-21 10:10:39:085 | info | [server/index.js]: Connecting to the transporter...
+2019-05-21 10:10:39:135 | info | [server/index.js]: Redis cacher connected.
+2019-05-21 10:10:39:165 | info | [server/index.js]: NATS client is connected.
+2019-05-21 10:10:39:680 | info | [server/index.js]: '$node' service is registered.
+2019-05-21 10:10:39:682 | info | [server/index.js]: 'math' service is registered.
+2019-05-21 10:10:39:685 | info | [server/index.js]: 'users' service is registered.
+2019-05-21 10:10:39:687 | info | [server/index.js]: 'otp' service is registered.
+2019-05-21 10:10:39:688 | info | [server/index.js]: ServiceBroker with 4 service(s) is started successfully.
+2019-05-21 10:10:51:759 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 10:10:51:765 | info | [client/index.js]: Node ID: client
+2019-05-21 10:10:51:766 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 10:10:51:767 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 10:10:51:769 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 10:10:51:772 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 10:10:51:773 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 10:10:51:783 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 10:10:51:849 | info | [client/index.js]: NATS client is connected.
+2019-05-21 10:10:51:877 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 10:10:52:382 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 10:10:52:383 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 10:10:52:394 | info | [server/index.js]: Node 'client' connected.
+2019-05-21 10:10:52:407 | error | [client/index.js]: Error occurred! Action: 'math.add', Message: 422 - Parameters validation error!
+2019-05-21 10:10:52:407 | error | [client/index.js]: Error data: 
+|---> {"0":{"type":"numberPositive","expected":0,"field":"a","message":"The 'a' field must be a positive number!"}}
+2019-05-21 10:11:10:635 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 10:11:10:635 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:11:27:656 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 10:11:27:678 | info | [client/index.js]: Node ID: client
+2019-05-21 10:11:27:679 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 10:11:27:680 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 10:11:27:683 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 10:11:27:685 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 10:11:27:688 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 10:11:27:705 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 10:11:27:818 | info | [client/index.js]: NATS client is connected.
+2019-05-21 10:11:27:835 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 10:11:28:350 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 10:11:28:351 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 10:11:28:377 | info | [server/index.js]: Node 'client' reconnected.
+2019-05-21 10:11:28:390 | info | [server/index.js]:  method called with a as 1
+2019-05-21 10:11:28:415 | info | [server/index.js]:  method called with a as 2
+2019-05-21 10:11:28:422 | info | [server/index.js]:  method called with a as 3
+2019-05-21 10:11:28:430 | info | [server/index.js]:  method called with a as 4
+2019-05-21 10:11:28:436 | info | [server/index.js]:  method called with a as 5
+2019-05-21 10:11:28:444 | info | [server/index.js]:  method called with a as 6
+2019-05-21 10:11:28:463 | info | [server/index.js]:  method called with a as 7
+2019-05-21 10:11:28:468 | info | [server/index.js]:  method called with a as 8
+2019-05-21 10:11:28:475 | info | [server/index.js]:  method called with a as 9
+2019-05-21 10:11:28:479 | info | [server/index.js]:  method called with a as 10
+2019-05-21 10:11:28:483 | info | [server/index.js]:  method called with a as 11
+2019-05-21 10:11:28:488 | info | [server/index.js]:  method called with a as 12
+2019-05-21 10:11:28:493 | info | [server/index.js]:  method called with a as 13
+2019-05-21 10:11:28:499 | info | [server/index.js]:  method called with a as 14
+2019-05-21 10:11:28:509 | info | [server/index.js]:  method called with a as 15
+2019-05-21 10:11:28:513 | info | [server/index.js]:  method called with a as 16
+2019-05-21 10:11:28:531 | info | [server/index.js]:  method called with a as 17
+2019-05-21 10:11:28:566 | info | [server/index.js]:  method called with a as 18
+2019-05-21 10:11:28:571 | info | [server/index.js]:  method called with a as 19
+2019-05-21 10:11:28:577 | info | [server/index.js]:  method called with a as 20
+2019-05-21 10:11:28:582 | info | [server/index.js]:  method called with a as 21
+2019-05-21 10:11:28:590 | info | [server/index.js]:  method called with a as 22
+2019-05-21 10:11:28:604 | info | [server/index.js]:  method called with a as 23
+2019-05-21 10:11:28:610 | info | [server/index.js]:  method called with a as 24
+2019-05-21 10:11:28:614 | info | [server/index.js]:  method called with a as 25
+2019-05-21 10:11:28:619 | info | [server/index.js]:  method called with a as 26
+2019-05-21 10:11:28:625 | info | [server/index.js]:  method called with a as 27
+2019-05-21 10:11:28:633 | info | [server/index.js]:  method called with a as 28
+2019-05-21 10:11:28:646 | info | [server/index.js]:  method called with a as 29
+2019-05-21 10:11:28:651 | info | [server/index.js]:  method called with a as 30
+2019-05-21 10:11:28:656 | info | [server/index.js]:  method called with a as 31
+2019-05-21 10:11:28:661 | info | [server/index.js]:  method called with a as 32
+2019-05-21 10:11:28:691 | info | [server/index.js]:  method called with a as 33
+2019-05-21 10:11:28:697 | info | [server/index.js]:  method called with a as 34
+2019-05-21 10:11:28:706 | info | [server/index.js]:  method called with a as 35
+2019-05-21 10:11:28:715 | info | [server/index.js]:  method called with a as 36
+2019-05-21 10:11:28:730 | info | [server/index.js]:  method called with a as 37
+2019-05-21 10:11:28:739 | info | [server/index.js]:  method called with a as 38
+2019-05-21 10:11:28:744 | info | [server/index.js]:  method called with a as 39
+2019-05-21 10:11:28:748 | info | [server/index.js]:  method called with a as 40
+2019-05-21 10:11:28:752 | info | [server/index.js]:  method called with a as 41
+2019-05-21 10:11:28:756 | info | [server/index.js]:  method called with a as 42
+2019-05-21 10:11:28:761 | info | [server/index.js]:  method called with a as 43
+2019-05-21 10:11:28:765 | info | [server/index.js]:  method called with a as 44
+2019-05-21 10:11:28:770 | info | [server/index.js]:  method called with a as 45
+2019-05-21 10:11:28:775 | info | [server/index.js]:  method called with a as 46
+2019-05-21 10:11:28:780 | info | [server/index.js]:  method called with a as 47
+2019-05-21 10:11:28:784 | info | [server/index.js]:  method called with a as 48
+2019-05-21 10:11:28:791 | info | [server/index.js]:  method called with a as 49
+2019-05-21 10:11:28:795 | info | [server/index.js]:  method called with a as 50
+2019-05-21 10:13:37:768 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:13:37:767 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 10:13:39:868 | info | [server/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:13:42:895 | info | [server/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 10:13:42:905 | info | [server/index.js]: Node ID: server
+2019-05-21 10:13:42:906 | info | [server/index.js]: Namespace: demo-micro-service
+2019-05-21 10:13:42:907 | info | [server/index.js]: Strategy: CpuUsageStrategy
+2019-05-21 10:13:43:016 | warn | [server/index.js]: The 'redlock' package is missing. If you want to enable cache lock, please install it with 'npm install redlock --save' command.
+2019-05-21 10:13:43:017 | info | [server/index.js]: Cacher: RedisCacher
+2019-05-21 10:13:43:018 | info | [server/index.js]: Serializer: JSONSerializer
+2019-05-21 10:13:43:020 | info | [server/index.js]: Transporter: NatsTransporter
+2019-05-21 10:13:43:023 | info | [server/index.js]: Registered 11 internal middleware(s).
+2019-05-21 10:13:43:065 | info | [server/index.js]: Connecting to the transporter...
+2019-05-21 10:13:43:138 | info | [server/index.js]: Redis cacher connected.
+2019-05-21 10:13:43:194 | info | [server/index.js]: NATS client is connected.
+2019-05-21 10:13:43:721 | info | [server/index.js]: '$node' service is registered.
+2019-05-21 10:13:43:724 | info | [server/index.js]: 'math' service is registered.
+2019-05-21 10:13:43:725 | info | [server/index.js]: 'users' service is registered.
+2019-05-21 10:13:43:736 | info | [server/index.js]: 'otp' service is registered.
+2019-05-21 10:13:43:750 | info | [server/index.js]: ServiceBroker with 4 service(s) is started successfully.
+2019-05-21 10:13:46:994 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 10:13:47:000 | info | [client/index.js]: Node ID: client
+2019-05-21 10:13:47:003 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 10:13:47:004 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 10:13:47:007 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 10:13:47:008 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 10:13:47:009 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 10:13:47:021 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 10:13:47:067 | info | [client/index.js]: NATS client is connected.
+2019-05-21 10:13:47:089 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 10:13:47:588 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 10:13:47:589 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 10:13:47:594 | info | [server/index.js]: Node 'client' connected.
+2019-05-21 10:13:47:599 | info | [server/index.js]:  method called with a as 1
+2019-05-21 10:13:47:606 | info | [server/index.js]:  method called with a as 2
+2019-05-21 10:13:47:610 | info | [server/index.js]:  method called with a as 3
+2019-05-21 10:13:47:614 | info | [server/index.js]:  method called with a as 4
+2019-05-21 10:13:47:618 | info | [server/index.js]:  method called with a as 5
+2019-05-21 10:13:47:621 | info | [server/index.js]:  method called with a as 6
+2019-05-21 10:13:47:625 | info | [server/index.js]:  method called with a as 7
+2019-05-21 10:13:47:629 | info | [server/index.js]:  method called with a as 8
+2019-05-21 10:13:47:633 | info | [server/index.js]:  method called with a as 9
+2019-05-21 10:13:47:636 | info | [server/index.js]:  method called with a as 10
+2019-05-21 10:13:47:642 | info | [server/index.js]:  method called with a as 11
+2019-05-21 10:13:47:646 | info | [server/index.js]:  method called with a as 12
+2019-05-21 10:13:47:650 | info | [server/index.js]:  method called with a as 13
+2019-05-21 10:13:47:664 | info | [server/index.js]:  method called with a as 14
+2019-05-21 10:13:47:669 | info | [server/index.js]:  method called with a as 15
+2019-05-21 10:13:47:673 | info | [server/index.js]:  method called with a as 16
+2019-05-21 10:13:47:677 | info | [server/index.js]:  method called with a as 17
+2019-05-21 10:13:47:684 | info | [server/index.js]:  method called with a as 18
+2019-05-21 10:13:47:687 | info | [server/index.js]:  method called with a as 19
+2019-05-21 10:13:47:704 | info | [server/index.js]:  method called with a as 20
+2019-05-21 10:13:47:711 | info | [server/index.js]:  method called with a as 21
+2019-05-21 10:13:47:717 | info | [server/index.js]:  method called with a as 22
+2019-05-21 10:13:47:724 | info | [server/index.js]:  method called with a as 23
+2019-05-21 10:13:47:735 | info | [server/index.js]:  method called with a as 24
+2019-05-21 10:13:47:749 | info | [server/index.js]:  method called with a as 25
+2019-05-21 10:13:47:754 | info | [server/index.js]:  method called with a as 26
+2019-05-21 10:13:47:762 | info | [server/index.js]:  method called with a as 27
+2019-05-21 10:13:47:768 | info | [server/index.js]:  method called with a as 28
+2019-05-21 10:13:47:773 | info | [server/index.js]:  method called with a as 29
+2019-05-21 10:13:47:780 | info | [server/index.js]:  method called with a as 30
+2019-05-21 10:13:47:790 | info | [server/index.js]:  method called with a as 31
+2019-05-21 10:13:47:801 | info | [server/index.js]:  method called with a as 32
+2019-05-21 10:13:47:806 | info | [server/index.js]:  method called with a as 33
+2019-05-21 10:13:47:811 | info | [server/index.js]:  method called with a as 34
+2019-05-21 10:13:47:817 | info | [server/index.js]:  method called with a as 35
+2019-05-21 10:13:47:822 | info | [server/index.js]:  method called with a as 36
+2019-05-21 10:13:47:829 | info | [server/index.js]:  method called with a as 37
+2019-05-21 10:13:47:841 | info | [server/index.js]:  method called with a as 38
+2019-05-21 10:13:47:850 | info | [server/index.js]:  method called with a as 39
+2019-05-21 10:13:47:854 | info | [server/index.js]:  method called with a as 40
+2019-05-21 10:13:47:890 | info | [server/index.js]:  method called with a as 41
+2019-05-21 10:13:47:906 | info | [server/index.js]:  method called with a as 42
+2019-05-21 10:13:47:914 | info | [server/index.js]:  method called with a as 43
+2019-05-21 10:13:47:919 | info | [server/index.js]:  method called with a as 44
+2019-05-21 10:13:47:931 | info | [server/index.js]:  method called with a as 45
+2019-05-21 10:13:47:940 | info | [server/index.js]:  method called with a as 46
+2019-05-21 10:13:47:952 | info | [server/index.js]:  method called with a as 47
+2019-05-21 10:13:47:964 | info | [server/index.js]:  method called with a as 48
+2019-05-21 10:13:47:977 | info | [server/index.js]:  method called with a as 49
+2019-05-21 10:13:47:982 | info | [server/index.js]:  method called with a as 50
+2019-05-21 10:15:19:401 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 10:15:19:402 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:15:27:354 | info | [server/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:15:31:240 | info | [server/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 10:15:31:245 | info | [server/index.js]: Node ID: server
+2019-05-21 10:15:31:246 | info | [server/index.js]: Namespace: demo-micro-service
+2019-05-21 10:15:31:247 | info | [server/index.js]: Strategy: CpuUsageStrategy
+2019-05-21 10:15:31:330 | warn | [server/index.js]: The 'redlock' package is missing. If you want to enable cache lock, please install it with 'npm install redlock --save' command.
+2019-05-21 10:15:31:330 | info | [server/index.js]: Cacher: RedisCacher
+2019-05-21 10:15:31:331 | info | [server/index.js]: Serializer: JSONSerializer
+2019-05-21 10:15:31:333 | info | [server/index.js]: Transporter: NatsTransporter
+2019-05-21 10:15:31:334 | info | [server/index.js]: Registered 11 internal middleware(s).
+2019-05-21 10:15:31:364 | info | [server/index.js]: Connecting to the transporter...
+2019-05-21 10:15:31:393 | info | [server/index.js]: Redis cacher connected.
+2019-05-21 10:15:31:422 | info | [server/index.js]: NATS client is connected.
+2019-05-21 10:15:31:936 | info | [server/index.js]: '$node' service is registered.
+2019-05-21 10:15:31:938 | info | [server/index.js]: 'math' service is registered.
+2019-05-21 10:15:31:939 | info | [server/index.js]: 'users' service is registered.
+2019-05-21 10:15:31:941 | info | [server/index.js]: 'otp' service is registered.
+2019-05-21 10:15:31:943 | info | [server/index.js]: ServiceBroker with 4 service(s) is started successfully.
+2019-05-21 10:15:38:648 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 10:15:38:654 | info | [client/index.js]: Node ID: client
+2019-05-21 10:15:38:655 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 10:15:38:656 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 10:15:38:660 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 10:15:38:661 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 10:15:38:662 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 10:15:38:672 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 10:15:38:726 | info | [client/index.js]: NATS client is connected.
+2019-05-21 10:15:38:739 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 10:15:39:240 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 10:15:39:241 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 10:15:39:246 | info | [server/index.js]: Node 'client' connected.
+2019-05-21 10:15:39:251 | info | [server/index.js]:  method called with a as 1
+2019-05-21 10:16:16:559 | warn | [client/index.js]: Node 'server' disconnected.
+2019-05-21 10:16:16:561 | info | [server/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:16:16:578 | error | [client/index.js]: Error occurred! Action: 'math.add', Message: 503 - Request is rejected when call 'math.add' action on 'server' node.
+2019-05-21 10:16:16:598 | error | [client/index.js]: Error data: 
+|---> {"action":"math.add","nodeID":"server"}
+2019-05-21 10:17:40:087 | info | [server/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 10:17:40:100 | info | [server/index.js]: Node ID: server
+2019-05-21 10:17:40:102 | info | [server/index.js]: Namespace: demo-micro-service
+2019-05-21 10:17:40:104 | info | [server/index.js]: Strategy: CpuUsageStrategy
+2019-05-21 10:17:40:243 | warn | [server/index.js]: The 'redlock' package is missing. If you want to enable cache lock, please install it with 'npm install redlock --save' command.
+2019-05-21 10:17:40:244 | info | [server/index.js]: Cacher: RedisCacher
+2019-05-21 10:17:40:246 | info | [server/index.js]: Serializer: JSONSerializer
+2019-05-21 10:17:40:250 | info | [server/index.js]: Transporter: NatsTransporter
+2019-05-21 10:17:40:268 | info | [server/index.js]: Registered 11 internal middleware(s).
+2019-05-21 10:17:40:362 | info | [server/index.js]: Connecting to the transporter...
+2019-05-21 10:17:40:462 | info | [server/index.js]: Redis cacher connected.
+2019-05-21 10:17:40:563 | info | [server/index.js]: NATS client is connected.
+2019-05-21 10:17:40:596 | info | [server/index.js]: Node 'client' connected.
+2019-05-21 10:17:41:116 | info | [server/index.js]: '$node' service is registered.
+2019-05-21 10:17:41:123 | info | [server/index.js]: 'math' service is registered.
+2019-05-21 10:17:41:136 | info | [server/index.js]: 'users' service is registered.
+2019-05-21 10:17:41:143 | info | [server/index.js]: 'otp' service is registered.
+2019-05-21 10:17:41:146 | info | [server/index.js]: ServiceBroker with 4 service(s) is started successfully.
+2019-05-21 10:17:41:184 | info | [client/index.js]: Node 'server' reconnected.
+2019-05-21 10:17:49:833 | warn | [server/index.js]: Node 'client' disconnected.
+2019-05-21 10:17:49:836 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:17:58:271 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 10:17:58:277 | info | [client/index.js]: Node ID: client
+2019-05-21 10:17:58:278 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 10:17:58:279 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 10:17:58:282 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 10:17:58:283 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 10:17:58:284 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 10:17:58:295 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 10:17:58:346 | info | [client/index.js]: NATS client is connected.
+2019-05-21 10:17:58:363 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 10:17:58:869 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 10:17:58:870 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 10:17:58:875 | info | [server/index.js]: Node 'client' reconnected.
+2019-05-21 10:17:58:882 | info | [server/index.js]:  method called with a as 1
+2019-05-21 10:18:15:573 | info | [client/index.js]: Moleculer v0.13.9 is starting...
+2019-05-21 10:18:15:579 | info | [client/index.js]: Node ID: client
+2019-05-21 10:18:15:580 | info | [client/index.js]: Namespace: demo-micro-service
+2019-05-21 10:18:15:581 | info | [client/index.js]: Strategy: RoundRobinStrategy
+2019-05-21 10:18:15:583 | info | [client/index.js]: Serializer: JSONSerializer
+2019-05-21 10:18:15:584 | info | [client/index.js]: Transporter: NatsTransporter
+2019-05-21 10:18:15:585 | info | [client/index.js]: Registered 10 internal middleware(s).
+2019-05-21 10:18:15:598 | info | [client/index.js]: Connecting to the transporter...
+2019-05-21 10:18:15:647 | info | [client/index.js]: NATS client is connected.
+2019-05-21 10:18:15:670 | info | [client/index.js]: Node 'server' connected.
+2019-05-21 10:18:16:178 | info | [client/index.js]: '$node' service is registered.
+2019-05-21 10:18:16:179 | info | [client/index.js]: ServiceBroker with 1 service(s) is started successfully.
+2019-05-21 10:18:16:187 | info | [server/index.js]:  method called with a as 1
+2019-05-21 10:19:27:885 | warn | [client/index.js]: Node 'server' disconnected.
+2019-05-21 10:19:27:885 | warn | [client/index.js]: Node 'server' disconnected.
+2019-05-21 10:19:27:887 | info | [server/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:19:27:899 | error | [client/index.js]: Error occurred! Action: 'math.add', Message: 503 - Request is rejected when call 'math.add' action on 'server' node.
+2019-05-21 10:19:27:907 | error | [client/index.js]: Error occurred! Action: 'math.add', Message: 503 - Request is rejected when call 'math.add' action on 'server' node.
+2019-05-21 10:19:27:913 | error | [client/index.js]: Error data: 
+|---> {"action":"math.add","nodeID":"server"}
+2019-05-21 10:19:27:912 | error | [client/index.js]: Error data: 
+|---> {"action":"math.add","nodeID":"server"}
+2019-05-21 10:19:29:275 | info | [client/index.js]: ServiceBroker is stopped. Good bye.
+2019-05-21 10:19:30:227 | info | [client/index.js]: ServiceBroker is stopped. Good bye.

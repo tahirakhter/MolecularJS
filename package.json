@@ -1,0 +1,28 @@
+{
+  "name": "moldemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "node client",
+    "server": "node server",
+    "lint": "eslint . --cache --ignore-path .gitignore",
+    "fix": "eslint . --fix --cache --ignore-path .gitignore"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "convict": "^4.4.1",
+    "crypto": "^1.0.1",
+    "ioredis": "^4.6.2",
+    "lodash": "^4.17.11",
+    "moleculer": "^0.13.7",
+    "nats": "^1.2.2",
+    "nodejs-aes256": "^1.0.1",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1"
+  }
+}
